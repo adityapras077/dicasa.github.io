@@ -672,6 +672,27 @@ section {
   background: #7bbad7;
 }
 
+.about .content video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive design */
+  overflow: hidden;
+}
+
+.about iframe {
+      position: relative;
+      top: 100;
+      left: 0;
+      width: 85vh;
+      height: 50vh;
+    }
+
+.about .text-container {
+      max-width: 650px; /* Maximum width for the text */
+      margin: 0 auto; /* Center the text horizontally */
+      padding: 20px; /* Add padding for spacing */
+    }
+
 .about .icon-boxes .icon-box {
   margin-top: 30px;
 }
@@ -719,11 +740,12 @@ section {
     text-align: left;
   }
 
-  .about .content {
-    width: 50%;
-    height: 40vh;
-    margin: 5px;
-    margin-bottom: 100px;
+  .about .video-container {
+  padding-bottom: 75%; /* Adjust as needed for responsiveness */
+  }
+
+  .about .text-container {
+  max-width: 100%;
   }
 }
 
