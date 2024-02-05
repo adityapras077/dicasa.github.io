@@ -672,20 +672,8 @@ section {
   background: #7bbad7;
 }
 
-.about .content video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive design */
-  overflow: hidden;
-}
-
-.about iframe {
-      position: relative;
-      top: 100;
-      left: 0;
-      width: 85vh;
-      height: 50vh;
-    }
+/*
+*/
 
 .about .text-container {
       max-width: 650px; /* Maximum width for the text */
@@ -718,6 +706,12 @@ section {
   .about .content {
     margin-right: 0;
   }
+
+  .about iframe {
+    width: 50vh;
+    height: 80vh;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 768px) {
@@ -746,6 +740,12 @@ section {
 
   .about .text-container {
   max-width: 100%;
+  }
+
+  .about iframe {
+    width: 500px;
+    height: 50vh;
+    object-fit: contain;
   }
 }
 
